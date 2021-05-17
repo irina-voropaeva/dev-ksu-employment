@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KsuEmployment.DataAccess", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KsuEmployment.BusinessLogic", "JobList.BusinessLogic\KsuEmployment.BusinessLogic.csproj", "{37FAEF73-0D5C-4EEA-B80F-FFEB622EBD86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KsuEmployment.Tests", "JobList.Tests\KsuEmployment.Tests.csproj", "{2758C1CF-54EE-488E-AB6F-58BE1E0AFDC9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KsuEmployment.Common", "JobList.Common\KsuEmployment.Common.csproj", "{0FE72330-2C08-4E93-842F-A4800FC14A14}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{37FAEF73-0D5C-4EEA-B80F-FFEB622EBD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FAEF73-0D5C-4EEA-B80F-FFEB622EBD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37FAEF73-0D5C-4EEA-B80F-FFEB622EBD86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2758C1CF-54EE-488E-AB6F-58BE1E0AFDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2758C1CF-54EE-488E-AB6F-58BE1E0AFDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2758C1CF-54EE-488E-AB6F-58BE1E0AFDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2758C1CF-54EE-488E-AB6F-58BE1E0AFDC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FE72330-2C08-4E93-842F-A4800FC14A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FE72330-2C08-4E93-842F-A4800FC14A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FE72330-2C08-4E93-842F-A4800FC14A14}.Release|Any CPU.ActiveCfg = Release|Any CPU

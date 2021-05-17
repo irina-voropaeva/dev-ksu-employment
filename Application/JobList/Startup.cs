@@ -49,7 +49,7 @@ namespace JobList
             // Connection to DataBase
             //services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             // For Tests
-            services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDb;Initial Catalog=JOB_LIST_DB;Integrated Security=True;MultipleActiveResultSets=True;"));
+            services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer("Data Source=ksuemloyment.database.windows.net;Initial Catalog=KsuEmployment;Integrated Security=False;User Id=ksudev;password=DevKsu2021!;MultipleActiveResultSets=True;"));
             services.AddSwaggerGen();
 
 

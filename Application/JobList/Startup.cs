@@ -48,7 +48,7 @@ namespace KsuEmployment.Api
             // Connection to DataBase
             //services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             // For Tests
-            services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer("Data Source=.;Initial Catalog=KsuEmployment;Integrated Security=True;User Id=ksudev;password=DevKsu2021!;MultipleActiveResultSets=True;"));
+            services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer("Data Source=ksuemloyment.database.windows.net;Initial Catalog=KsuEmployment;Integrated Security=False;User Id=ksudev;password=DevKsu2021!;MultipleActiveResultSets=True;"));
             services.AddSwaggerGen();
 
 

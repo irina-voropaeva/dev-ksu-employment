@@ -1,5 +1,5 @@
 ﻿
-namespace JobList.Common.DTOS
+namespace KsuEmployment.Common.DTOS
 {
     public class TokenDTO
     {

@@ -1,13 +1,15 @@
-﻿using AutoMapper;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Requests;
-using JobList.DataAccess.Entities;
-using JobList.DataAccess.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.DataAccess.Interfaces;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
 
-namespace JobList.BusinessLogic.Services
+namespace KsuEmployment.BusinessLogic.Services
 {
     public class CitiesService : ICitiesService
     {

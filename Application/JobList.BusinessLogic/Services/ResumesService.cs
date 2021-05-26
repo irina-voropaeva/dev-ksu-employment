@@ -1,20 +1,21 @@
-﻿using AutoMapper;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Extensions;
-using JobList.Common.Pagination;
-using JobList.Common.Requests;
-using JobList.Common.UrlQuery;
-using JobList.DataAccess.Entities;
-using JobList.DataAccess.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using AutoMapper;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.Common.UrlQuery;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.DataAccess.Interfaces;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Extensions;
+using KsuEmployment.Common.Pagination;
+using Microsoft.EntityFrameworkCore;
 
-namespace JobList.BusinessLogic.Services
+namespace KsuEmployment.BusinessLogic.Services
 {
     public class ResumesService : IResumesService
     {

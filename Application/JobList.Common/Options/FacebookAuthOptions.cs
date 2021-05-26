@@ -1,5 +1,5 @@
 ﻿
-namespace JobList.Common.Options
+namespace KsuEmployment.Common.Options
 {
     public class FacebookAuthOptions
     {

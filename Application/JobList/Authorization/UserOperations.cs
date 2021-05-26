@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace JobList.Authorization
+namespace KsuEmployment.Api.Authorization
 {
     public static class UserOperations
     {

@@ -1,7 +1,8 @@
 ﻿using FluentValidation;
-using JobList.Common.Requests;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.Common.Requests;
 
-namespace JobList.Common.Validators
+namespace KsuEmployment.Common.Validators
 {
     public class CompanyValidator : AbstractValidator<CompanyRequest>
     {

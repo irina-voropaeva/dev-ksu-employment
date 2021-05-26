@@ -1,8 +1,9 @@
-﻿using JobList.Common.Interfaces.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Interfaces.Entities;
 
-namespace JobList.Common.DTOS
+namespace KsuEmployment.Common.DTOS
 {
     public class ResumeDTO : IEntity<int>
     {

@@ -1,10 +1,9 @@
-﻿using JobList.Common.DTOS;
-using JobList.Common.Requests;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
 
-
-namespace JobList.BusinessLogic.Interfaces
+namespace KsuEmployment.BusinessLogic.Interfaces
 {
     public interface IFavoriteVacanciesService
     {

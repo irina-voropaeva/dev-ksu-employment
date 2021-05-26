@@ -1,12 +1,13 @@
 ﻿using System.Threading.Tasks;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Errors;
-using JobList.Common.Requests;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Errors;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JobList.Controllers
+namespace KsuEmployment.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,6 +1,6 @@
 ﻿using System;
 using Bogus;
-using JobList.DataAccess.Entities;
+using KsuEmployment.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace KsuEmployment.DataAccess.Data
@@ -21,119 +21,119 @@ namespace KsuEmployment.DataAccess.Data
 
             var cities = new City[]
             {
-                new City {Id = 1, Name = "New York"},
-                new City {Id = 2, Name = "Jersey"},
-                new City {Id = 3, Name = "Atlanta"},
-                new City {Id = 4, Name = "Los Angeles"},
-                new City {Id = 5, Name = "Boston"},
-                new City {Id = 6, Name = "Philadelphia"},
-                new City {Id = 7, Name = "Seattle"},
-                new City {Id = 8, Name = "Washington DC"},
-                new City {Id = 9, Name = "Las Vegas"},
-                new City {Id = 10, Name = "Phoneix"},
-                new City {Id = 11, Name = "San Francisco"},
-                new City {Id = 12, Name = "Chicago"}
+                new City {Id = 1, Name = "Херсон"},
+                new City {Id = 2, Name = "Київ"},
+                new City {Id = 3, Name = "Львів"},
+                new City {Id = 4, Name = "Дніпро"},
+                new City {Id = 5, Name = "Харків"},
+                new City {Id = 6, Name = "Одеса"},
+                new City {Id = 7, Name = "Чернігів"},
+                new City {Id = 8, Name = "Миколаїв"},
+                new City {Id = 9, Name = "Полтава"},
+                new City {Id = 10, Name = "Суми"},
+                new City {Id = 11, Name = "Тернопіль"},
+                new City {Id = 12, Name = "Івано-Франківськ"}
             };
 
             var languages = new Language[]
             {
-                new Language { Id = 1, Name = "English" },
-                new Language { Id = 2, Name = "Ukrainian" },
-                new Language { Id = 3, Name = "Russian" },
-                new Language { Id = 4, Name = "Polish" },
-                new Language { Id = 5, Name = "Greek" },
-                new Language { Id = 6, Name = "Japanese" },
-                new Language { Id = 7, Name = "Spanish" },
-                new Language { Id = 8, Name = "Chinese" },
-                new Language { Id = 9, Name = "German" },
-                new Language { Id = 10, Name = "Roman" }
+                new Language { Id = 1, Name = "Англійська" },
+                new Language { Id = 2, Name = "Українська" },
+                new Language { Id = 3, Name = "Російська" },
+                new Language { Id = 4, Name = "Польська" },
+                new Language { Id = 5, Name = "Грецька" },
+                new Language { Id = 6, Name = "Японська" },
+                new Language { Id = 7, Name = "Іспанська" },
+                new Language { Id = 8, Name = "Китайська" },
+                new Language { Id = 9, Name = "Німецька" },
+                new Language { Id = 10, Name = "Румунська" }
             };
 
             var schools = new School[]
             {
-                new School {Id = 1, Name = "Chicago State University" },
-                new School {Id = 2, Name = "Harvard University" },
-                new School {Id = 3, Name = "Prinston University" },
-                new School {Id = 4, Name = "Berklee College Of Arts" },
-                new School {Id = 5, Name = "Stanford University" },
-                new School {Id = 6, Name = "Massachusetts Institute of Technology"},
-                new School {Id = 7, Name = "Columbia University" },
-                new School {Id = 8, Name = "New York University" },
-                new School {Id = 9, Name = "University of Arizona" },
-                new School {Id = 10, Name = "Yale University" }
+                new School {Id = 1, Name = "Херсонський державний університет" },
+                new School {Id = 2, Name = "Херсонський політехничний колледж" },
+                new School {Id = 3, Name = "Херсонський національний технічний університет" },
+                new School {Id = 4, Name = "Український католицький університет" },
+                new School {Id = 5, Name = "Херсонський аграрний університет" },
+                new School {Id = 6, Name = "Київський політехнічний інститут"},
+                new School {Id = 7, Name = "Херсонська школа міліції" },
+                new School {Id = 8, Name = "Херсонська морська академія" },
+                new School {Id = 9, Name = "Херсонський музичний колледж" },
+                new School {Id = 10, Name = "Київський національний університет" }
 
             };
 
             var workAreas = new WorkArea[]
             {
                 new WorkArea{ Id = 1, Name = "IT" },
-                new WorkArea{ Id = 2, Name = "Sales" },
-                new WorkArea{ Id = 3, Name = "Medicine" },
-                new WorkArea{ Id = 4, Name = "Marketing and Advertising" },
-                new WorkArea{ Id = 5, Name = "Law and Politics" },
-                new WorkArea{ Id = 6, Name = "Science" },
-                new WorkArea{ Id = 7, Name = "Tourism" },
-                new WorkArea{ Id = 8, Name = "Arts" },
-                new WorkArea{ Id = 9, Name = "Insurance" },
-                new WorkArea{ Id = 10, Name = "Real Estate" },
-                new WorkArea{ Id = 11, Name = "Finances" },
-                new WorkArea{ Id = 12, Name = "Media" }
+                new WorkArea{ Id = 2, Name = "Продажі" },
+                new WorkArea{ Id = 3, Name = "Медицина" },
+                new WorkArea{ Id = 4, Name = "Маркетинг та реклама" },
+                new WorkArea{ Id = 5, Name = "Право та політика" },
+                new WorkArea{ Id = 6, Name = "Наука" },
+                new WorkArea{ Id = 7, Name = "Туризм" },
+                new WorkArea{ Id = 8, Name = "Мистецтво" },
+                new WorkArea{ Id = 9, Name = "Страхування" },
+                new WorkArea{ Id = 10, Name = "Нерухомість" },
+                new WorkArea{ Id = 11, Name = "Фінанси" },
+                new WorkArea{ Id = 12, Name = "ЗМІ" }
             };
 
             var faculties = new Faculty[]
             {
-                new Faculty{ Id = 1, Name = "Computer Science" },
-                new Faculty{ Id = 2, Name = "Software Engineering"},
-                new Faculty{ Id = 3, Name = "Applied Mathematics"},
-                new Faculty{ Id = 4, Name = "Foreign Languages"},
-                new Faculty{ Id = 5, Name = "International Relationships"},
-                new Faculty{ Id = 6, Name = "Economics"},
-                new Faculty{ Id = 7, Name = "Design"},
-                new Faculty{ Id = 8, Name = "Faculty of Law"},
-                new Faculty{ Id = 9, Name = "Marketing"},
-                new Faculty{ Id = 10, Name = "Journalism"}
+                new Faculty{ Id = 1, Name = "Комп'ютерні науки" },
+                new Faculty{ Id = 2, Name = "Інженерія програмного забезпечення"},
+                new Faculty{ Id = 3, Name = "Прикладна математика"},
+                new Faculty{ Id = 4, Name = "Іноземні мови"},
+                new Faculty{ Id = 5, Name = "Міжнародні відносини"},
+                new Faculty{ Id = 6, Name = "Економіка"},
+                new Faculty{ Id = 7, Name = "Дизайн"},
+                new Faculty{ Id = 8, Name = "Факультет права"},
+                new Faculty{ Id = 9, Name = "Маркетинг"},
+                new Faculty{ Id = 10, Name = "Журналістика"}
             };
 
-            var employee = new Employee { Id = 46, FirstName = "Andrew", LastName = "Felton", Phone = "0502758765", Sex = "m", BirthDate = new DateTime(1995, 8, 3), Email = "employee@gmail.com", Password = "CdMwWKQ0n40R4dK/zsjIx0XhXdgxXCcyJfbbuViFMJC2mVik", RoleId = 2, CityId = 8 };
+            var employee = new Employee { Id = 46, FirstName = "Андрій", LastName = "Тарасов", Phone = "0502758765", Sex = "m", BirthDate = new DateTime(1995, 8, 3), Email = "employee@gmail.com", Password = "CdMwWKQ0n40R4dK/zsjIx0XhXdgxXCcyJfbbuViFMJC2mVik", RoleId = 2, CityId = 8 };
             var resume = new Resume
             {
                 Id = 46,
                 WorkAreaId = 3,
-                Courses = "Certification training",
-                CreateDate = new DateTime(2018, 4, 5),
-                KeySkills = "Hardworking, persuasive",
-                SoftSkills = "Plastic surgery",
+                Courses = "Курси BeetRoot",
+                CreateDate = new DateTime(2018, 4, 5, 0, 0, 0),
+                KeySkills = "Працьовитий, переконливий",
+                SoftSkills = "Angular, React",
                 Facebook = "www.facebook.com",
-                FamilyState = "not married",
-                Introduction = "Persuasive person with strong desire to work",
+                FamilyState = "не одружений",
+                Introduction = "Закоханий у власну справу",
                 Linkedin = "https://www.linkedin.com/",
                 Instagram = "https://www.instagram.com/",
                 Skype = "https://www.skype.com/",
                 Github = "https://www.github.com/"
                 ,
-                Position = "Surgeon"
+                Position = "Junior JavaScript Developer"
             };
 
             var resume_language1 = new ResumeLanguage { Id = 111, ResumeId = 46, LanguageId = 10 };
             var resume_language2 = new ResumeLanguage { Id = 112, ResumeId = 46, LanguageId = 5 };
             var resume_language3 = new ResumeLanguage { Id = 113, ResumeId = 46, LanguageId = 7 };
-            var experience1 = new Experience { Id = 65, ResumeId = 46, CompanyName = "Triomed", Position = "Surgeon", StartDate = new DateTime(2008, 12, 25), FinishDate = new DateTime(2016, 9, 5) };
-            var experience2 = new Experience { Id = 66, ResumeId = 46, CompanyName = "Medis", Position = "Surgeon", StartDate = new DateTime(2016, 12, 25), FinishDate = new DateTime(2018, 9, 5) };
-            var experience3 = new Experience { Id = 67, ResumeId = 46, CompanyName = "Synevo", Position = "Surgeon", StartDate = new DateTime(2018, 9, 5), FinishDate = new DateTime(2018, 9, 10) };
-            var school1 = new EducationPeriod { Id = 111, ResumeId = 46, SchoolId = 8, FacultyId = 4, StartDate = new DateTime(2002, 12, 3), FinishDate = new DateTime(2005, 6, 14) };
-            var school2 = new EducationPeriod { Id = 112, ResumeId = 46, SchoolId = 5, FacultyId = 2, StartDate = new DateTime(2004, 8, 13), FinishDate = new DateTime(2007, 1, 15) };
+            var experience1 = new Experience { Id = 65, ResumeId = 46, CompanyName = "Triomed", Position = "Surgeon", StartDate = new DateTime(2008, 12, 25, 0, 0, 0), FinishDate = new DateTime(2016, 9, 5, 0, 0, 0) };
+            var experience2 = new Experience { Id = 66, ResumeId = 46, CompanyName = "Medis", Position = "Surgeon", StartDate = new DateTime(2016, 12, 25, 0, 0, 0), FinishDate = new DateTime(2018, 9, 5, 0, 0, 0) };
+            var experience3 = new Experience { Id = 67, ResumeId = 46, CompanyName = "Synevo", Position = "Surgeon", StartDate = new DateTime(2018, 9, 5, 0, 0, 0), FinishDate = new DateTime(2018, 9, 10, 0, 0, 0) };
+            var school1 = new EducationPeriod { Id = 111, ResumeId = 46, SchoolId = 8, FacultyId = 4, StartDate = new DateTime(2002, 12, 3, 0, 0, 0), FinishDate = new DateTime(2005, 6, 14, 0, 0, 0) };
+            var school2 = new EducationPeriod { Id = 112, ResumeId = 46, SchoolId = 5, FacultyId = 2, StartDate = new DateTime(2004, 8, 13, 0, 0, 0), FinishDate = new DateTime(2007, 1, 15, 0, 0, 0) };
 
 
             var company = new Company
             {
                 Id = 11111,
-                Name = "SoftServe",
-                BossName = "Taras Kytsmey",
-                FullDescription = "At SoftServe, we strive to make the world a better place. Our Corporate Social Responsibility program ensures a sustainable future for our associates, our company, and the communities in which we live and work across the globe. The key to fulfilling this mission is our responsibility towards customers, associates, and society. We are committed to addressing various economic, social, and environmental issues.",
-                ShortDescription = "Build you career here",
-                Address = "2D Sadova Street Lviv",
+                Name = "GlobalLogic",
+                BossName = "Володимир Петренко",
+                FullDescription = "PetrenkoAndTeam - Накраща компанія у Херсоні",
+                ShortDescription = "Будуй свою кар'єру тут",
+                Address = "Університетська 135",
                 Phone = "0322409090",
-                Site = "https://softserveinc.com/en-us/",
+                Site = "https://topteamcompany.com/en-us/",
                 Email = "company@gmail.com",
                 RoleId = 3,
                 Password = "CdMwWKQ0n40R4dK/zsjIx0XhXdgxXCcyJfbbuViFMJC2mVik"
@@ -141,8 +141,8 @@ namespace KsuEmployment.DataAccess.Data
             var recruiter = new Recruiter
             {
                 Id = 11111,
-                FirstName = "Kate",
-                LastName = "Janner",
+                FirstName = "Катерина",
+                LastName = "Павленко",
                 Phone = "0934561223",
                 Email = "recruiter@gmail.com",
                 Password = "CdMwWKQ0n40R4dK/zsjIx0XhXdgxXCcyJfbbuViFMJC2mVik",
@@ -190,7 +190,7 @@ namespace KsuEmployment.DataAccess.Data
                 WorkAreaId = 1
             };
 
-            var companyFaker = new Faker<Company>()
+            var companyFaker = new Faker<Company>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.Name, f => f.PickRandom($"Company {f.Random.Number(999)}"))
                 .RuleFor(o => o.BossName, f => f.Name.FirstName())
@@ -207,7 +207,7 @@ namespace KsuEmployment.DataAccess.Data
             companies[amount] = company;
 
 
-            var recruiterFaker = new Faker<Recruiter>()
+            var recruiterFaker = new Faker<Recruiter>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.FirstName, f => f.Name.FirstName())
                 .RuleFor(o => o.LastName, f => f.Name.LastName())
@@ -221,7 +221,7 @@ namespace KsuEmployment.DataAccess.Data
             recruiters[amount] = recruiter;
 
 
-            var vacancyFaker = new Faker<Vacancy>()
+            var vacancyFaker = new Faker<Vacancy>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.Name, f => f.Name.JobTitle())
                 .RuleFor(o => o.Description, f => f.Name.JobDescriptor())
@@ -242,7 +242,7 @@ namespace KsuEmployment.DataAccess.Data
             vacancies[amount] = fullVacancy2;
 
 
-            var employeeFaker = new Faker<Employee>()
+            var employeeFaker = new Faker<Employee>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.FirstName, f => f.Name.FirstName())
                 .RuleFor(o => o.LastName, f => f.Name.LastName())
@@ -260,7 +260,7 @@ namespace KsuEmployment.DataAccess.Data
                 uu[i] = employees[i];
             }
             employees[10] = employee;
-            var resumeFaker = new Faker<Resume>()
+            var resumeFaker = new Faker<Resume>("uk")
                 .RuleFor(o => o.Id, f => f.PickRandom(uu).Id)
                 .RuleFor(o => o.Linkedin, f => f.Internet.Url())
                 .RuleFor(o => o.Github, f => f.Internet.Url())
@@ -283,7 +283,7 @@ namespace KsuEmployment.DataAccess.Data
             Resume[] fakeResumes = new Resume[1];
             for (int i = 0; i < resumes.Length - 1; i++)
             { fakeResumes[i] = resumes[i]; }
-            var experienceFaker = new Faker<Experience>()
+            var experienceFaker = new Faker<Experience>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.CompanyName, f => f.Name.FullName())
                 .RuleFor(o => o.Position, f => f.Lorem.Sentence())
@@ -296,10 +296,7 @@ namespace KsuEmployment.DataAccess.Data
             experiences[11] = experience2;
             experiences[12] = experience3;
 
-
-
-
-            var educationPeriodFaker = new Faker<EducationPeriod>()
+            var educationPeriodFaker = new Faker<EducationPeriod>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.StartDate, new DateTime(2017, 3, 4))
                 .RuleFor(o => o.FinishDate, new DateTime(2017, 3, 4))
@@ -313,7 +310,7 @@ namespace KsuEmployment.DataAccess.Data
             educationPeriods[11] = school2;
 
 
-            var resumeLanguageFaker = new Faker<ResumeLanguage>()
+            var resumeLanguageFaker = new Faker<ResumeLanguage>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.ResumeId, f => f.PickRandom(fakeResumes).Id)
                 .RuleFor(o => o.LanguageId, f => f.PickRandom(languages).Id);
@@ -325,14 +322,14 @@ namespace KsuEmployment.DataAccess.Data
 
 
 
-            var favoriteVacancyFaker = new Faker<FavoriteVacancy>()
+            var favoriteVacancyFaker = new Faker<FavoriteVacancy>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.VacancyId, f => f.PickRandom(vacancies).Id)
                 .RuleFor(o => o.EmployeeId, f => f.PickRandom(employees).Id);
 
             var favoriteVacancies = favoriteVacancyFaker.Generate(10).ToArray();
 
-            var invitationFaker = new Faker<Invitation>()
+            var invitationFaker = new Faker<Invitation>("uk")
                 .RuleFor(o => o.Id, f => f.UniqueIndex)
                 .RuleFor(o => o.VacancyId, f => f.PickRandom(vacancies).Id)
                 .RuleFor(o => o.EmployeeId, f => f.PickRandom(employees).Id);

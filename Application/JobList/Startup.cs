@@ -1,38 +1,37 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using JobList.Common.Validators;
-using JobList.BusinessLogic.Interfaces;
-using JobList.BusinessLogic.MappingProfiles;
-using JobList.BusinessLogic.Services;
-using JobList.DataAccess;
-using JobList.DataAccess.Interfaces;
-using FluentValidation.AspNetCore;
-using AutoMapper;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Http;
-using JobList.Common.Options;
-using System;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+﻿using System;
 using System.Text;
-using JobList.Common.DTOS;
-using Microsoft.AspNetCore.Authorization;
-using JobList.AuthorizationHandlers;
-using Microsoft.AspNetCore.Mvc.Authorization;
-using JobList.Providers;
-using Microsoft.AspNetCore.SignalR;
-using JobList.BusinessLogic.Hubs;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Primitives;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using JobList.BusinessLogic.Providers;
+using AutoMapper;
+using FluentValidation.AspNetCore;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Validators;
+using KsuEmployment.DataAccess.Interfaces;
+using KsuEmployment.Api.AuthorizationHandlers;
+using KsuEmployment.Api.Providers;
+using KsuEmployment.BusinessLogic.Hubs;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.BusinessLogic.MappingProfiles;
+using KsuEmployment.BusinessLogic.Providers;
+using KsuEmployment.BusinessLogic.Services;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Options;
 using KsuEmployment.DataAccess;
 using KsuEmployment.DataAccess.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
-namespace JobList
+namespace KsuEmployment.Api
 {
     public class Startup
     {
@@ -49,7 +48,7 @@ namespace JobList
             // Connection to DataBase
             //services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             // For Tests
-            services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer("Data Source=ksuemloyment.database.windows.net;Initial Catalog=KsuEmployment;Integrated Security=False;User Id=ksudev;password=DevKsu2021!;MultipleActiveResultSets=True;"));
+            services.AddDbContext<KsuEmploymentDbContext>(options => options.UseSqlServer("Data Source=.;Initial Catalog=KsuEmployment;Integrated Security=True;User Id=ksudev;password=DevKsu2021!;MultipleActiveResultSets=True;"));
             services.AddSwaggerGen();
 
 

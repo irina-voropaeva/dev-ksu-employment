@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JobList.Common.Errors
+namespace KsuEmployment.Common.Errors
 {
     [Serializable]
     public class ErrorResponse

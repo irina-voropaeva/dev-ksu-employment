@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace JobList.DataAccess.Entities
+namespace KsuEmployment.DataAccess.Entities
 {
     public class Resume :  Entity<int>
     {

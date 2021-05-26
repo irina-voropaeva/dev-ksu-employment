@@ -1,14 +1,12 @@
-﻿using JobList.Common.Errors;
+﻿using System;
+using System.Net;
+using System.Threading.Tasks;
+using KsuEmployment.Common.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
 
-namespace JobList.Middlewares
+namespace KsuEmployment.Api.Middlewares
 {
     public class HttpStatusCodeExceptionMiddleware
     {

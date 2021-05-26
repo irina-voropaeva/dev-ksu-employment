@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JobList.DataAccess.Entities
+namespace KsuEmployment.DataAccess.Entities
 {
     public class Experience : Entity<int>
     {

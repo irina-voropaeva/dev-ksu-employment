@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace JobList.Common.Extensions
+namespace KsuEmployment.Common.Extensions
 {
     public static class PredicateBuilder
     {

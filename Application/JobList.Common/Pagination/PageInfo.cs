@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JobList.Common.Pagination
+namespace KsuEmployment.Common.Pagination
 {
     public class PageInfo
     {

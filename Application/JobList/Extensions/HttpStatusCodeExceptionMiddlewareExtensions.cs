@@ -1,7 +1,7 @@
-﻿using JobList.Middlewares;
+﻿using KsuEmployment.Api.Middlewares;
 using Microsoft.AspNetCore.Builder;
 
-namespace JobList.Extensions
+namespace KsuEmployment.Api.Extensions
 {
     public static class HttpStatusCodeExceptionMiddlewareExtensions
     {

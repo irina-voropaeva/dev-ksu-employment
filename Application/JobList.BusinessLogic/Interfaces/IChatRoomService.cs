@@ -1,9 +1,9 @@
-﻿using JobList.Common.ChatHelpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using KsuEmployment.Common.ChatHelpers;
 
-namespace JobList.BusinessLogic.Interfaces
+namespace KsuEmployment.BusinessLogic.Interfaces
 {
     public interface IChatRoomService
     {

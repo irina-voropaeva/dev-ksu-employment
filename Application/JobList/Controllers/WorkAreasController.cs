@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Requests;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

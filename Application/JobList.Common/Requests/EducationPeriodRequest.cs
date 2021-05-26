@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JobList.Common.Requests
+namespace KsuEmployment.Common.Requests
 {
     public class EducationPeriodRequest
     {

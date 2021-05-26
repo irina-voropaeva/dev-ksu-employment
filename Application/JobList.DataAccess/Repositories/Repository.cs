@@ -5,15 +5,15 @@ using System.Linq.Expressions;
 using System.Net;
 using System.Threading.Tasks;
 using AutoMapper;
-using JobList.Common.Errors;
-using JobList.Common.Interfaces.Entities;
-using JobList.Common.Pagination;
-using JobList.DataAccess.Interfaces.Repositories;
+using KsuEmployment.DataAccess.Interfaces.Repositories;
+using KsuEmployment.Common.Errors;
+using KsuEmployment.Common.Interfaces.Entities;
+using KsuEmployment.Common.Pagination;
 using KsuEmployment.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace JobList.DataAccess.Repositories
+namespace KsuEmployment.DataAccess.Repositories
 {
     public class Repository<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : class, IEntity<TKey> where TKey : IComparable
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace JobList.Common.Requests
+namespace KsuEmployment.Common.Requests
 {
     public class RecruierResetPasswordRequest
     {

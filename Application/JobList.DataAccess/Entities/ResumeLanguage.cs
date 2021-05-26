@@ -1,5 +1,5 @@
 ﻿
-namespace JobList.DataAccess.Entities
+namespace KsuEmployment.DataAccess.Entities
 {
     public class ResumeLanguage : Entity<int>
     {

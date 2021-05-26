@@ -1,8 +1,9 @@
-﻿using JobList.Common.DTOS;
-using JobList.Common.Requests;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.Common.DTOS;
 
-namespace JobList.BusinessLogic.Interfaces
+namespace KsuEmployment.BusinessLogic.Interfaces
 {
     public interface ITokensService<T>
     {

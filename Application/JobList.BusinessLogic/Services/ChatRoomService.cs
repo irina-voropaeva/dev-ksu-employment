@@ -1,11 +1,11 @@
-﻿using JobList.BusinessLogic.Interfaces;
-using JobList.Common.ChatHelpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.ChatHelpers;
 
-namespace JobList.BusinessLogic.Services
+namespace KsuEmployment.BusinessLogic.Services
 {
     public class ChatRoomService : IChatRoomService
 

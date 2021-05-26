@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Pagination;
-using JobList.Common.Requests;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Pagination;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace JobList.Controllers
+namespace KsuEmployment.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

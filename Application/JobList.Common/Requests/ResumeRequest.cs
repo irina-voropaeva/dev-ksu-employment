@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace JobList.Common.Requests
+namespace KsuEmployment.Common.Requests
 {
     public class ResumeRequest
     {

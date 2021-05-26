@@ -1,5 +1,5 @@
 ﻿
-namespace JobList.Common.Sorting
+namespace KsuEmployment.Common.Sorting
 {
     public class SortingUrlQuery
     {

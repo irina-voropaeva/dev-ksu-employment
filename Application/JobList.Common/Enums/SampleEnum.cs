@@ -1,5 +1,5 @@
 ﻿
-namespace JobList.Common.Enums
+namespace KsuEmployment.Common.Enums
 {
     public enum SampleEnum
     {

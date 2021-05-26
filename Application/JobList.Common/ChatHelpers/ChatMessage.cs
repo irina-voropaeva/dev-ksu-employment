@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JobList.Common.ChatHelpers
+namespace KsuEmployment.Common.ChatHelpers
 {
     public class ChatMessage
     {

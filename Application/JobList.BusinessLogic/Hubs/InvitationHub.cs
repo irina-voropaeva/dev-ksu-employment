@@ -1,13 +1,11 @@
-﻿using JobList.BusinessLogic.Interfaces;
-using JobList.Common.Requests;
+﻿using System;
+using System.Threading.Tasks;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.BusinessLogic.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace JobList.BusinessLogic.Hubs
+namespace KsuEmployment.BusinessLogic.Hubs
 {
     public class InvitationHub : Hub
     {

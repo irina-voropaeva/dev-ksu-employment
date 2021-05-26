@@ -1,4 +1,4 @@
-﻿namespace JobList.Common.UrlQuery
+﻿namespace KsuEmployment.Common.UrlQuery
 {
     public class ResumeUrlQuery
     {

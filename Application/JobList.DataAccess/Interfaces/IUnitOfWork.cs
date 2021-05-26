@@ -1,7 +1,7 @@
-﻿using JobList.DataAccess.Interfaces.Repositories;
+﻿using KsuEmployment.DataAccess.Interfaces.Repositories;
 using System.Threading.Tasks;
 
-namespace JobList.DataAccess.Interfaces
+namespace KsuEmployment.DataAccess.Interfaces
 {
     public interface IUnitOfWork
     {

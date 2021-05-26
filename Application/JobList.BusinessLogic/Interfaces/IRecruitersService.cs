@@ -1,15 +1,16 @@
-﻿using JobList.Common.DTOS;
-using JobList.Common.Pagination;
-using JobList.Common.Requests;
-using JobList.Common.Sorting;
-using JobList.Common.UrlQuery;
-using JobList.DataAccess.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.Common.Sorting;
+using KsuEmployment.Common.UrlQuery;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Pagination;
 
-namespace JobList.BusinessLogic.Interfaces
+namespace KsuEmployment.BusinessLogic.Interfaces
 {
     public interface IRecruitersService
     {

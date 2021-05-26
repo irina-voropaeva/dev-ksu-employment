@@ -1,4 +1,4 @@
-﻿using JobList.DataAccess.Entities;
+﻿using KsuEmployment.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace KsuEmployment.DataAccess.Data

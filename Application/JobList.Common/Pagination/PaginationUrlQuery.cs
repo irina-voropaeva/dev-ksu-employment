@@ -1,5 +1,5 @@
 ﻿
-namespace JobList.Common.Pagination
+namespace KsuEmployment.Common.Pagination
 {
     public class PaginationUrlQuery
     {

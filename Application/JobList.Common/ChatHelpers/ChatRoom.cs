@@ -1,4 +1,4 @@
-﻿namespace JobList.Common.ChatHelpers
+﻿namespace KsuEmployment.Common.ChatHelpers
 {
     public class ChatRoom
     {

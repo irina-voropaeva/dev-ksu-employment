@@ -1,8 +1,8 @@
-﻿using JobList.Common.Interfaces.Entities;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Interfaces.Entities;
 
-namespace JobList.Common.DTOS
+namespace KsuEmployment.Common.DTOS
 {
     public class EmployeeDTO : IEntity<int>
     {

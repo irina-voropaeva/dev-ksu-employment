@@ -1,26 +1,27 @@
-﻿ using AutoMapper;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Errors;
-using JobList.Common.Options;
-using JobList.Common.Requests;
-using JobList.DataAccess.Entities;
-using JobList.DataAccess.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
+using System.Net.Http;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using System.Net.Http;
+using AutoMapper;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.DataAccess.Interfaces;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Errors;
+using KsuEmployment.Common.Models;
+using KsuEmployment.Common.Options;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using JobList.Common.Models;
 
-namespace JobList.BusinessLogic.Services
+namespace KsuEmployment.BusinessLogic.Services
 {
     public class EmployeeTokensService : IEmployeeTokensService
     {

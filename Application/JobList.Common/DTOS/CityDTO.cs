@@ -1,6 +1,6 @@
-﻿using JobList.Common.Interfaces.Entities;
+﻿using KsuEmployment.Common.Interfaces.Entities;
 
-namespace JobList.Common.DTOS
+namespace KsuEmployment.Common.DTOS
 {
     public class CityDTO : IEntity<int>
     {

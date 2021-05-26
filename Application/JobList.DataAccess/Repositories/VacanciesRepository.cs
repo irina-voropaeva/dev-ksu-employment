@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using JobList.DataAccess.Entities;
-using JobList.DataAccess.Interfaces.Repositories;
-using JobList.DataAccess.Repositories;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.DataAccess.Interfaces.Repositories;
+using KsuEmployment.DataAccess.Repositories;
 using KsuEmployment.DataAccess.Data;
 
 namespace KsuEmployment.DataAccess.Repositories

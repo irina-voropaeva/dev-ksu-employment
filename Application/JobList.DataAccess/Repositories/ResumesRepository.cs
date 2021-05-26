@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using JobList.DataAccess.Entities;
-using JobList.DataAccess.Interfaces.Repositories;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.DataAccess.Interfaces.Repositories;
 using KsuEmployment.DataAccess.Data;
 
-namespace JobList.DataAccess.Repositories
+namespace KsuEmployment.DataAccess.Repositories
 {
     public class ResumesRepository : Repository<Resume, int>, IResumesRepository
     {

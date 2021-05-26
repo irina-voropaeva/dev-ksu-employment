@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.SignalR;
-using System.Security.Claims;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.SignalR;
 
-namespace JobList.Providers
+namespace KsuEmployment.Api.Providers
 {
     public class CustomUserIdProvider : IUserIdProvider
     {

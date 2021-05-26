@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
-using JobList.Common.DTOS;
-using JobList.Common.Requests;
-using JobList.DataAccess.Entities;
-using System;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
 
-namespace JobList.BusinessLogic.MappingProfiles
+namespace KsuEmployment.BusinessLogic.MappingProfiles
 {
     public class CitiesProfile : Profile
     {

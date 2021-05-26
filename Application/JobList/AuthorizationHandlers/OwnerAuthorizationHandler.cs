@@ -1,13 +1,9 @@
-﻿using JobList.Common.DTOS;
+﻿using System.Security.Claims;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
-namespace JobList.AuthorizationHandlers
+namespace KsuEmployment.Api.AuthorizationHandlers
 {
     public class OwnerAuthorizationHandler : AuthorizationHandler<OperationAuthorizationRequirement, int>
     {

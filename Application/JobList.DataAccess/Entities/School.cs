@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace JobList.DataAccess.Entities
+namespace KsuEmployment.DataAccess.Entities
 {
     public class School : Entity<int>
     {

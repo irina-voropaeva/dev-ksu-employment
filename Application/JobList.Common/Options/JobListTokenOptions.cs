@@ -1,7 +1,7 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using System.Text;
+﻿using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
-namespace JobList.Common.Options
+namespace KsuEmployment.Common.Options
 {
     public class JobListTokenOptions
     {

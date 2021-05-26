@@ -1,21 +1,21 @@
-﻿using AutoMapper;
-using JobList.BusinessLogic.Hubs;
-using JobList.BusinessLogic.Interfaces;
-using JobList.Common.DTOS;
-using JobList.Common.Pagination;
-using JobList.Common.Requests;
-using JobList.DataAccess.Entities;
-using JobList.DataAccess.Interfaces;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.SignalR;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using AutoMapper;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Requests;
+using KsuEmployment.DataAccess.Entities;
+using KsuEmployment.DataAccess.Interfaces;
+using KsuEmployment.BusinessLogic.Hubs;
+using KsuEmployment.BusinessLogic.Interfaces;
+using KsuEmployment.Common.DTOS;
+using KsuEmployment.Common.Pagination;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 
-namespace JobList.BusinessLogic.Services
+namespace KsuEmployment.BusinessLogic.Services
 {
     public class InvitationsService : IInvitationsService
     {

@@ -1,8 +1,8 @@
-﻿using JobList.Common.Interfaces.Entities;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using KsuEmployment.Common.Interfaces.Entities;
 
-namespace JobList.DataAccess.Entities
+namespace KsuEmployment.DataAccess.Entities
 {
     public abstract class Entity<TKey> : IEntity<TKey> where TKey : IComparable
     {

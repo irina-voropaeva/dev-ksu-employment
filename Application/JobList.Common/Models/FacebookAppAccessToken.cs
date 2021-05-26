@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace JobList.Common.Models
+namespace KsuEmployment.Common.Models
 {
     public class FacebookAppAccessToken
     {

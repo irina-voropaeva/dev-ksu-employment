@@ -1,6 +1,6 @@
-﻿using JobList.DataAccess.Entities;
+﻿using KsuEmployment.DataAccess.Entities;
 
-namespace JobList.DataAccess.Interfaces.Repositories
+namespace KsuEmployment.DataAccess.Interfaces.Repositories
 {
     public interface IWorkAreasRepository : IRepository<WorkArea, int>
     {

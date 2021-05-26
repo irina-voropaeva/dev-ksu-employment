@@ -143,7 +143,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /vacancies
-        [Authorize(Roles = "recruiter, admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<VacancyDTO>> Create([FromBody] VacancyRequest request)
         {
@@ -162,7 +162,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /vacancies/:id
-        [Authorize(Roles = "recruiter, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]VacancyRequest request)
         {
@@ -189,7 +189,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /vacancies/:id
-        [Authorize(Roles = "recruiter, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

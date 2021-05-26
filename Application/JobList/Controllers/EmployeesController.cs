@@ -30,7 +30,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // GET: /employees
-        [Authorize(Roles = "company, recruiter, admin")]
+        [AllowAnonymous]
         [HttpGet]
         public virtual async Task<ActionResult<IEnumerable<EmployeeDTO>>> Get()
         {
@@ -43,7 +43,7 @@ namespace KsuEmployment.Api.Controllers
             return Ok(dtos);
         }
 
-        [Authorize(Roles = "company, recruiter, admin")]
+        [AllowAnonymous]
         [HttpGet("filtered")]
         public virtual async Task<ActionResult<IEnumerable<EmployeeDTO>>> GetFiltered([FromQuery]SearchingUrlQuery searchingUrlQuery = null, [FromQuery]SortingUrlQuery sortingUrlQuery = null,
                                                                             [FromQuery]PaginationUrlQuery paginationUrlQuery = null)
@@ -67,7 +67,7 @@ namespace KsuEmployment.Api.Controllers
             return Ok(dtos);
         }
 
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public virtual async Task<ActionResult<EmployeeDTO>> GetById(int id)
         {
@@ -116,7 +116,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /employees/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]EmployeeUpdateRequest request)
         {
@@ -143,7 +143,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /employees/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {
@@ -163,7 +163,7 @@ namespace KsuEmployment.Api.Controllers
 
             return NoContent();
         }
-        [Authorize(Roles = "employee")]
+        [AllowAnonymous]
         [HttpPut("{id}/reset")]
         public virtual async Task<ActionResult> ResetPassword([FromRoute]int id, [FromBody]EmployeeResetPasswordRequest request)
         {

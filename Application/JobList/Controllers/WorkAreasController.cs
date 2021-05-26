@@ -49,7 +49,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /workAreas
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<WorkAreaDTO>> Create([FromBody] WorkAreaRequest request)
         {
@@ -68,7 +68,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /workAreas/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]WorkAreaRequest request)
         {
@@ -87,7 +87,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /workAreas/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

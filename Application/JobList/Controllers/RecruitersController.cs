@@ -134,7 +134,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /recruiters
-        [Authorize(Roles = "company, admin")]
+        [AllowAnonymous]
         [HttpPost("register")]
         public virtual async Task<ActionResult<RecruiterDTO>> Register([FromBody] RecruiterRequest request)
         {
@@ -160,7 +160,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /recruiters/:id
-        [Authorize(Roles = "company, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]RecruiterUpdateRequest request)
         {
@@ -187,7 +187,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /recruiters/:id
-        [Authorize(Roles = "company, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {
@@ -210,7 +210,7 @@ namespace KsuEmployment.Api.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = "recruiter")]
+        [AllowAnonymous]
         [HttpPut("{id}/reset")]
         public virtual async Task<ActionResult> ResetPassword([FromRoute]int id, [FromBody]RecruierResetPasswordRequest request)
         {

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace KsuEmployment.BusinessLogic.Hubs
 {
-    [Authorize(Roles = "admin")]
+    [AllowAnonymous]
     public class AdminHub : Hub
     {
         private readonly IChatRoomService _chatRoomService;

@@ -49,7 +49,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /faculties
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<FacultyDTO>> Create([FromBody] FacultyRequest request)
         {
@@ -68,7 +68,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /faculties/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]FacultyRequest request)
         {
@@ -87,7 +87,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /faculties/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

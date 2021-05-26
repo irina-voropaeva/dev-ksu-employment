@@ -49,7 +49,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /schools
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<SchoolDTO>> Create([FromBody] SchoolRequest request)
         {
@@ -68,7 +68,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /schools/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]SchoolRequest request)
         {
@@ -87,7 +87,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /schools/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

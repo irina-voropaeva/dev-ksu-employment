@@ -56,7 +56,7 @@ namespace KsuEmployment.BusinessLogic.Hubs
             await _adminHub.Clients.All.SendAsync("ActiveRooms", await _chatRoomService.GetAllRooms());
         }
 
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         public async Task JoinRoom(Guid roomId)
         {
             if (roomId == Guid.Empty)
@@ -65,7 +65,7 @@ namespace KsuEmployment.BusinessLogic.Hubs
             await Groups.AddToGroupAsync(Context.ConnectionId, roomId.ToString());
         }
 
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         public async Task LeaveRoom(Guid roomId)
         {
             if (roomId == Guid.Empty)

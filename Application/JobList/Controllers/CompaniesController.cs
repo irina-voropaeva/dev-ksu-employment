@@ -107,7 +107,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /companies/:id
-        [Authorize(Roles = "company, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]CompanyUpdateRequest request)
         {
@@ -135,7 +135,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /companies/:id
-        [Authorize(Roles = "company, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {
@@ -155,7 +155,7 @@ namespace KsuEmployment.Api.Controllers
 
             return NoContent();
         }
-        [Authorize(Roles = "company")]
+        [AllowAnonymous]
         [HttpPut("{id}/reset")]
         public virtual async Task<ActionResult> ResetPassword([FromRoute]int id, [FromBody]CompanyResetPasswordRequest request)
         {

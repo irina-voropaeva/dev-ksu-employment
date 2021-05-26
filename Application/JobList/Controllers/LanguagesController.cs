@@ -50,7 +50,7 @@ namespace KsuEmployment.Controllers
         }
 
         // POST: /languages
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<LanguageDTO>> Create([FromBody] LanguageRequest request)
         {
@@ -69,7 +69,7 @@ namespace KsuEmployment.Controllers
         }
 
         // PUT: /languages/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]LanguageRequest request)
         {
@@ -88,7 +88,7 @@ namespace KsuEmployment.Controllers
         }
 
         // DELETE: /languages/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

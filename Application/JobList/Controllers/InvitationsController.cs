@@ -77,7 +77,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /invitations
-        //[Authorize(Roles = "recruiter, admin")]
+        //[AllowAnonymous]
         [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<InvitationDTO>> Create([FromBody] InvitationRequest request)
@@ -97,7 +97,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /invitations/:id
-        [Authorize(Roles = "recruiter, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]InvitationRequest request)
         {
@@ -116,7 +116,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /invitations/:id
-        [Authorize(Roles = "recruiter, employee, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

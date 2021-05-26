@@ -29,7 +29,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // GET: /resumes
-        [Authorize(Roles = "company, recruiter, admin")]
+        [AllowAnonymous]
         [HttpGet]
         public virtual async Task<ActionResult<IEnumerable<ResumeDTO>>> Get([FromQuery] PaginationUrlQuery urlQuery = null)
         {
@@ -51,7 +51,7 @@ namespace KsuEmployment.Api.Controllers
             return Ok(dtos);
         }
 
-        [Authorize(Roles = "company, recruiter, admin")]
+        [AllowAnonymous]
         [HttpGet("filtered")]
         public virtual async Task<ActionResult<IEnumerable<VacancyDTO>>> Get([FromQuery]ResumeUrlQuery resumeUrlQuery, [FromQuery]PaginationUrlQuery paginationUrlQuery = null)
        {
@@ -106,7 +106,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /resumes
-        [Authorize(Roles = "employee")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<ResumeDTO>> Create([FromBody] ResumeRequest request)
         {
@@ -125,7 +125,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /resumes/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]ResumeRequest request)
         {
@@ -152,7 +152,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /resumes/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

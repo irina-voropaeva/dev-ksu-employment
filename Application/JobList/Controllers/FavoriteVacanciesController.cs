@@ -51,7 +51,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /favoriteVacancies
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<FavoriteVacancyDTO>> Create([FromBody] FavoriteVacancyRequest request)
         {
@@ -70,7 +70,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /favoriteVacancies/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]FavoriteVacancyRequest request)
         {
@@ -97,7 +97,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /favoriteVacancies/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

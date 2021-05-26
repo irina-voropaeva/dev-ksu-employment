@@ -52,7 +52,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /experiences
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<ExperienceDTO>> Create([FromBody] ExperienceRequest request)
         {
@@ -71,7 +71,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /experiences/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]ExperienceRequest request)
         {
@@ -98,7 +98,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /experiences/:id
-        [Authorize(Roles = "employee, admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

@@ -50,7 +50,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // POST: /cities
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPost]
         public virtual async Task<ActionResult<CityDTO>> Create([FromBody] CityRequest request)
         {
@@ -69,7 +69,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // PUT: /cities/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public virtual async Task<ActionResult> Update([FromRoute]int id, [FromBody]CityRequest request)
         {
@@ -88,7 +88,7 @@ namespace KsuEmployment.Api.Controllers
         }
 
         // DELETE: /cities/:id
-        [Authorize(Roles = "admin")]
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public virtual async Task<ActionResult> Delete(int id)
         {

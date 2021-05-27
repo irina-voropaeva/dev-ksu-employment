@@ -16,13 +16,13 @@ namespace KsuEmployment.BusinessLogic.Hubs
             _invitationsService = invitationsService;
         }
 
-        [Authorize]
+        [AllowAnonymous]
         public async Task SendInvitation(InvitationRequest request)
         {
             var result = await _invitationsService.CreateInvitationAsync(request);
         }
 
-        [Authorize]
+        [AllowAnonymous]
         public async Task DeleteInvitation(int id)
         {
             var result = await _invitationsService.DeleteInvitationByIdAsync(id);

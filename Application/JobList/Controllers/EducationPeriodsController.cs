@@ -78,11 +78,6 @@ namespace KsuEmployment.Api.Controllers
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, request.ResumeId, UserOperations.Update);
 
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
-
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -107,11 +102,6 @@ namespace KsuEmployment.Api.Controllers
 
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, entity.ResumeId, UserOperations.Delete);
-
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
 
             var result = await _educationPeriodsService.DeleteEntityByIdAsync(id);
             if (!result)

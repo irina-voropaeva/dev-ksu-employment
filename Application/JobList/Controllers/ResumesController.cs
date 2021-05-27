@@ -75,20 +75,10 @@ namespace KsuEmployment.Api.Controllers
         }
  
 
-        [Authorize]
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public virtual async Task<ActionResult<ResumeDTO>> GetById(int id)
         {
-            if (User.IsInRole("employee"))
-            {
-                var isAuthorized = await _authorizationService
-                                    .AuthorizeAsync(User, id, UserOperations.Update);
-
-                if (!isAuthorized.Succeeded)
-                {
-                    return Forbid();
-                }
-            }
             try
             {
                 var dto = await _resumesService.GetEntityByIdAsync(id);
@@ -132,11 +122,6 @@ namespace KsuEmployment.Api.Controllers
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, id, UserOperations.Update);
 
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
-
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -158,11 +143,6 @@ namespace KsuEmployment.Api.Controllers
         {
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, id, UserOperations.Delete);
-
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
 
             var result = await _resumesService.DeleteEntityByIdAsync(id);
             if (!result)

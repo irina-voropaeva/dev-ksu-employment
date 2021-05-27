@@ -228,9 +228,9 @@ namespace KsuEmployment.Api
             app.UseAuthentication();
             app.UseSignalR(routes =>
             {
-                routes.MapHub<InvitationHub>("/invitationHub");
-                routes.MapHub<ChatHub>("/chatHub");
-                routes.MapHub<AdminHub>("/adminHub");
+                routes.MapHub<InvitationHub>("/api/invitationHub");
+                routes.MapHub<ChatHub>("/api/chatHub");
+                routes.MapHub<AdminHub>("/api/adminHub");
             });
             app.UseMvc();
         }

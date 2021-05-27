@@ -167,11 +167,6 @@ namespace KsuEmployment.Api.Controllers
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, request.CompanyId, UserOperations.Update);
 
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
-
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -196,10 +191,6 @@ namespace KsuEmployment.Api.Controllers
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, entity.Company.Id, UserOperations.Update);
 
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
 
             var result = await _recruitersService.DeleteRecruiterByIdAsync(id);
             if (!result)
@@ -216,11 +207,6 @@ namespace KsuEmployment.Api.Controllers
         {
             var isAuthorized = await _authorizationService
                     .AuthorizeAsync(User, id, UserOperations.Update);
-
-            if (!isAuthorized.Succeeded)
-            {
-                return Forbid();
-            }
 
 
             if (!ModelState.IsValid)
